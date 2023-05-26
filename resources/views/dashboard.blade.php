@@ -11,14 +11,17 @@
 </head>
 
 <body>
-    <div class="bg-blue-200 flex mb-4 items-center ">
-        <div class="w-3/4">
+    <div class="bg-blue-200 grid grid-cols-1 gap-4 justify-items-center">
+        <div>
             <h2>Agent : {{ $infos['data']['symbol']}}</h2>
+        </div>
+        <div>
             <h2>Affiliation : {{ $infos['data']['startingFaction']}}</h2>
+        </div>
+        <div>
             <h2>Crédits : {{ $infos['data']['credits']}}</h2>
         </div>
-        <div class="w-1/4">
+        <div>
             <h2>Coordonnée du QG : {{ $infos['data']['headquarters']}}</h2>
         </div>
-    </div>
 </body>
